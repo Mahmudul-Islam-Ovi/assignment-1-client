@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Section2 = () => {
   return (
-    <div className="h-[488px] container mx-auto rounded-lg bg-[#F1F1F1]">
+    <div className="lg:h-[488px] container mx-auto rounded-lg bg-[#F1F1F1]">
       <div className="flex  flex-col lg:flex-row gap-40 p-10">
         <div className="">
           <div className="text-[35px] w-[375px font-semibold">

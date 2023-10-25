@@ -20,10 +20,9 @@ const Contact = () => {
       },
       body: JSON.stringify({ name, email, message, phone }),
     });
-    console.log(data);
 
     if (data.status === 401 || !data) {
-      console.log(error);
+      alert(error);
     } else {
       setEmail("");
       setName("");
@@ -33,7 +32,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="h-[661px] mt-24 mb-10 bg-[#bac3cf]	flex flex-col lg:flex-row p-10  justify-center items-center">
+    <div className="lg:h-[661px] mt-24 mb-10 bg-[#bac3cf]	flex flex-col lg:flex-row p-10  justify-center items-center">
       <div className="flex  w-[500px] flex-col gap-10 justify-center  items-center">
         <div className="flex flex-col gap-10">
           <div>
@@ -62,7 +61,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-[650px] bg-white border rounded h-[811px] flex justify-center items-center">
+      <div className="lg:w-[650px] bg-white border rounded h-[811px] flex justify-center items-center">
         <div>
           <div className="p-5">
             <p className="lg:text-[56px] font-semibold">Contact Now</p>
